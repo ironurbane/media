@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 背景圆形 -->
+  <circle cx="32" cy="32" r="30" fill="#3949ab"/>
+  
+  <!-- 键盘/码字元素 -->
+  <g transform="translate(32, 32)">
+    <!-- 键盘底板 -->
+    <rect x="-18" y="-3" width="36" height="20" rx="2" ry="2" fill="#e0e0e0"/>
+    
+    <!-- 键盘按键 - 第一行 -->
+    <rect x="-16" y="-1" width="4" height="4" rx="1" ry="1" fill="#424242"/>
+    <rect x="-10" y="-1" width="4" height="4" rx="1" ry="1" fill="#424242"/>
+    <rect x="-4" y="-1" width="4" height="4" rx="1" ry="1" fill="#424242"/>
+    <rect x="2" y="-1" width="4" height="4" rx="1" ry="1" fill="#424242"/>
+    <rect x="8" y="-1" width="4" height="4" rx="1" ry="1" fill="#424242"/>
+    
+    <!-- 键盘按键 - 第二行 -->
+    <rect x="-16" y="5" width="4" height="4" rx="1" ry="1" fill="#424242"/>
+    <rect x="-10" y="5" width="4" height="4" rx="1" ry="1" fill="#424242"/>
+    <rect x="-4" y="5" width="4" height="4" rx="1" ry="1" fill="#424242"/>
+    <rect x="2" y="5" width="4" height="4" rx="1" ry="1" fill="#424242"/>
+    <rect x="8" y="5" width="4" height="4" rx="1" ry="1" fill="#424242"/>
+    
+    <!-- 键盘按键 - 第三行 / 空格键 -->
+    <rect x="-10" y="11" width="20" height="4" rx="1" ry="1" fill="#424242"/>
+
+    <!-- 文字/代码元素 -->
+    <g transform="translate(0, -16)">
+      <!-- 简化的代码页面 -->
+      <rect x="-12" y="-8" width="24" height="14" rx="1" ry="1" fill="white"/>
+      
+      <!-- 代码行 -->
+      <line x1="-8" y1="-5" x2="8" y2="-5" stroke="#42a5f5" stroke-width="1"/>
+      <line x1="-8" y1="-2" x2="4" y2="-2" stroke="#42a5f5" stroke-width="1"/>
+      <line x1="-8" y1="1" x2="6" y2="1" stroke="#42a5f5" stroke-width="1"/>
+      <line x1="-8" y1="4" x2="2" y2="4" stroke="#42a5f5" stroke-width="1"/>
+      
+      <!-- 文字图标 - 汉字"字"的简化 -->
+      <g transform="translate(0, -9) scale(0.14)">
+        <path d="M 0 -25 L 0 25 M -25 0 L 25 0 M -25 -25 L 25 -25" 
+              stroke="#ff4081" stroke-width="10" stroke-linecap="round" fill="none"/>
+      </g>
+    </g>
+  </g>
+  
+  <!-- 发光效果框 - 代表创意和思维 -->
+  <rect x="14" y="6" width="36" height="26" rx="2" ry="2" stroke="#8c9eff" stroke-width="0.8" fill="none" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="949" height="256" viewbox="0 0 949 256">
+  <!-- Left side: Tiger cub (child) -->
+  <g transform="translate(170, 128) scale(3.4)">
+    <!-- Tiger face -->
+    <circle cx="0" cy="0" r="25" fill="#f8a348" />
+    
+    <!-- Tiger ears -->
+    <path d="M-15 -18 Q-22 -30 -10 -20" fill="#f8a348" stroke="#e67700" stroke-width="1.5" />
+    <path d="M15 -18 Q22 -30 10 -20" fill="#f8a348" stroke="#e67700" stroke-width="1.5" />
+    
+    <!-- Tiger stripes (simplified) -->
+    <path d="M-18 0 Q-14 -8 -10 0" stroke="#e67700" stroke-width="2" fill="none" />
+    <path d="M18 0 Q14 -8 10 0" stroke="#e67700" stroke-width="2" fill="none" />
+    
+    <!-- Tiger eyes -->
+    <circle cx="-8" cy="-5" r="4" fill="white" />
+    <circle cx="8" cy="-5" r="4" fill="white" />
+    <circle cx="-8" cy="-5" r="2" fill="black" />
+    <circle cx="8" cy="-5" r="2" fill="black" />
+    
+    <!-- Tiger nose and mouth -->
+    <circle cx="0" cy="2" r="3" fill="#ffb380" />
+    <path d="M-7 10 Q0 15 7 10" stroke="black" stroke-width="1.5" fill="none" />
+  </g>
+  
+  <!-- Center: Small heart (symbolizing love for mother) -->
+  <path d="M320 128 Q330 90 350 128 Q370 90 380 128 Q380 150 350 180 Q320 150 320 128" fill="#ff9999" />
+  
+  <!-- Right side: Mother silhouette with code/art elements -->
+  <g transform="translate(550, 128) scale(3.2)">
+    <!-- Mother silhouette (larger tiger outline) -->
+    <path d="M0 -30 Q40 -30 40 0 Q40 30 0 30 Q-40 30 -40 0 Q-40 -30 0 -30" fill="none" stroke="#a0aec0" stroke-width="1.5" />
+    
+    <!-- Simplified code brackets (representing code) -->
+    <path d="M-20 -10 L-25 0 L-20 10" stroke="#4a5568" stroke-width="1.5" fill="none" />
+    <path d="M20 -10 L25 0 L20 10" stroke="#4a5568" stroke-width="1.5" fill="none" />
+    
+    <!-- Artistic elements (brush stroke suggestion) -->
+    <path d="M-10 -5 Q0 -15 10 -5 Q0 5 -10 -5" fill="#718096" opacity="0.5" />
+  </g>
+  
+  <!-- Connecting dotted line (showing relationship) -->
+  <path d="M270 128 Q450 80 480 128" stroke="#cbd5e0" stroke-width="4" stroke-dasharray="12,8" fill="none" />
+</svg>
