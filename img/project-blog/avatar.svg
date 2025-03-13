@@ -148,17 +148,13 @@
     </g>
   </g>
   
-  <!-- 改进的文字设计 -->
-  <!-- 主标题文字 -->
+  <!-- 改进的文字设计 - 调整括号位置使其对称 -->
   <g>
-    <!-- 背景光晕 -->
-    <rect x="90" y="380" width="320" height="40" rx="5" ry="5" fill="#00bfff" opacity="0.15" filter="url(#textGlow)" />
+    <!-- 首先测量文本宽度以便正确放置括号 -->
+    <text id="mainText" x="250" y="408" font-family="'Noto Sans SC', 'Source Han Sans SC', 'Microsoft YaHei', sans-serif" font-size="24" font-weight="300" text-anchor="middle" fill="#ffffff" filter="url(#textGlow)">『寄码于文字，融技于艺术』</text>
     
-    <!-- 主文字 - 使用更适合中文显示的字体组合 -->
-    <text x="250" y="408" font-family="'Noto Sans SC', 'Source Han Sans SC', 'Microsoft YaHei', sans-serif" font-size="24" font-weight="300" text-anchor="middle" fill="#ffffff" filter="url(#textGlow)">『寄码于文字，融技于艺术』</text>
-    
-    <!-- 添加符号装饰 -->
-    <text x="95" y="408" font-family="monospace" font-size="24" fill="#00ffff" opacity="0.8">{</text>
-    <text x="405" y="408" font-family="monospace" font-size="24" fill="#00ffff" opacity="0.8">}</text>
+    <!-- 添加符号装饰 - 修复的位置 -->
+    <text x="90" y="408" font-family="monospace" font-size="24" fill="#00ffff" opacity="0.8">{</text>
+    <text x="410" y="408" font-family="monospace" font-size="24" fill="#00ffff" opacity="0.8">}</text>
   </g>
 </svg>
