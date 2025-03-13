@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-  <!-- 渐变背景 - 宇宙感 -->
+  <!-- 深色背景 - 宇宙感 -->
   <defs>
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0f0c29" />
@@ -13,13 +13,19 @@
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
     
+    <!-- 加强的文字发光效果 -->
+    <filter id="textGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
     <!-- 星云效果 -->
     <radialGradient id="nebula" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
       <stop offset="0%" stop-color="#ff00cc" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#3300ff" stop-opacity="0" />
     </radialGradient>
     
-    <!-- 电路图案 -->
+    <!-- 电路图纹理 -->
     <pattern id="circuitPattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
       <line x1="0" y1="25" x2="50" y2="25" stroke="#00bfff" stroke-width="0.5" opacity="0.3" />
       <line x1="25" y1="0" x2="25" y2="50" stroke="#00bfff" stroke-width="0.5" opacity="0.3" />
@@ -30,7 +36,7 @@
   <!-- 背景 -->
   <rect width="500" height="500" fill="url(#bgGradient)" />
   
-  <!-- 电路图案背景层 -->
+  <!-- 电路图纹理背景层 -->
   <rect width="500" height="500" fill="url(#circuitPattern)" opacity="0.15" />
   
   <!-- 星云效果 -->
@@ -59,7 +65,7 @@
     </path>
   </g>
   
-  <!-- 中心艺术元素：DNA与诗词融合 -->
+  <!-- 中心艺术元素：DNA与诗词结合 -->
   <g transform="translate(250, 200)">
     <!-- DNA双螺旋 (代表科技) -->
     <path d="M -60 -80 
@@ -90,20 +96,20 @@
     <line x1="-60" y1="120" x2="60" y2="80" stroke="#ff00ff" stroke-width="1.5" />
     <line x1="-60" y1="160" x2="60" y2="120" stroke="#ff00ff" stroke-width="1.5" />
     
-    <!-- 中央发光圆 - 代表思想核心 -->
+    <!-- 中央发光体 - 代表思想核心 -->
     <circle cx="0" cy="0" r="35" fill="#ff00ff" opacity="0.2" filter="url(#glow)" />
     <circle cx="0" cy="0" r="25" fill="#ff00ff" opacity="0.4" />
     <circle cx="0" cy="0" r="15" fill="#ffffff" opacity="0.8" />
     
-    <!-- 极简汉字 "诗" 与代码符号融合 -->
+    <!-- 汉字和代码符号结合 -->
     <g transform="translate(0, 0) scale(0.4)">
       <!-- 代码符号 { -->
       <path d="M -30 -50 C -50 -40, -50 40, -30 50" stroke="#ffffff" stroke-width="8" fill="none" />
       <!-- 代码符号 } -->
       <path d="M 30 -50 C 50 -40, 50 40, 30 50" stroke="#ffffff" stroke-width="8" fill="none" />
-      <!-- 诗字中间笔画 -->
+      <!-- 诗字中间横笔 -->
       <line x1="-20" y1="0" x2="20" y2="0" stroke="#ffffff" stroke-width="8" />
-      <!-- 诗字竖画 -->
+      <!-- 诗字竖笔 -->
       <line x1="0" y1="-40" x2="0" y2="40" stroke="#ffffff" stroke-width="8" />
     </g>
     
@@ -142,9 +148,17 @@
     </g>
   </g>
   
-  <!-- 文字部分 -->
-  <text x="250" y="360" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#ffffff" filter="url(#glow)">毛毛的乖孩子</text>
-  
-  <!-- 底部标语 -->
-  <text x="250" y="400" font-family="serif" font-style="italic" font-size="18" text-anchor="middle" fill="#00ffff" filter="url(#glow)">代码背后的诗意</text>
+  <!-- 改进的文字设计 -->
+  <!-- 主标题文字 -->
+  <g>
+    <!-- 背景光晕 -->
+    <rect x="90" y="380" width="320" height="40" rx="5" ry="5" fill="#00bfff" opacity="0.15" filter="url(#textGlow)" />
+    
+    <!-- 主文字 - 使用更适合中文显示的字体组合 -->
+    <text x="250" y="408" font-family="'Noto Sans SC', 'Source Han Sans SC', 'Microsoft YaHei', sans-serif" font-size="24" font-weight="300" text-anchor="middle" fill="#ffffff" filter="url(#textGlow)">『寄码于文字，融技于艺术』</text>
+    
+    <!-- 添加符号装饰 -->
+    <text x="95" y="408" font-family="monospace" font-size="24" fill="#00ffff" opacity="0.8">{</text>
+    <text x="405" y="408" font-family="monospace" font-size="24" fill="#00ffff" opacity="0.8">}</text>
+  </g>
 </svg>
