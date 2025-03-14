@@ -2,14 +2,14 @@
   <!-- 背景渐变 -->
   <defs>
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a2a3a" />
-      <stop offset="100%" stop-color="#0f1c2d" />
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#edf2f7" />
     </linearGradient>
     
     <!-- 对话框渐变 -->
     <linearGradient id="chatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#263238" stop-opacity="0.7" />
-      <stop offset="100%" stop-color="#37474F" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#f5f7fa" stop-opacity="0.9" />
     </linearGradient>
     
     <!-- 光晕效果 -->
@@ -20,7 +20,7 @@
     
     <!-- 波浪图案 -->
     <pattern id="wave" width="100" height="20" patternUnits="userSpaceOnUse">
-      <path d="M0 10 Q 12.5 0, 25 10 T 50 10 T 75 10 T 100 10" stroke="#4FC3F7" fill="none" stroke-width="1" stroke-opacity="0.3" />
+      <path d="M0 10 Q 12.5 0, 25 10 T 50 10 T 75 10 T 100 10" stroke="#4287f5" fill="none" stroke-width="0.5" stroke-opacity="0.2" />
     </pattern>
   </defs>
   
@@ -28,119 +28,119 @@
   <rect width="1000" height="450" fill="url(#bgGradient)" />
   
   <!-- 波浪背景装饰 -->
-  <rect width="1000" height="450" fill="url(#wave)" opacity="0.2" />
+  <rect width="1000" height="450" fill="url(#wave)" opacity="0.15" />
   
   <!-- 代码注释装饰 - 背景 -->
-  <g opacity="0.1">
-    <text x="50" y="50" fill="#4CAF50" font-family="monospace" font-size="10">
+  <g opacity="0.35">
+    <text x="50" y="50" fill="#1a56db" font-family="monospace" font-size="10">
       /* 每一条碎碎念都有它的归宿 */
     </text>
-    <text x="200" y="90" fill="#4CAF50" font-family="monospace" font-size="10">
+    <text x="200" y="90" fill="#1a56db" font-family="monospace" font-size="10">
       // 整理让思想更清晰
     </text>
-    <text x="350" y="130" fill="#4CAF50" font-family="monospace" font-size="10">
+    <text x="350" y="130" fill="#1a56db" font-family="monospace" font-size="10">
       /* 梳理思绪，传递灵感 */
     </text>
-    <text x="150" y="170" fill="#4CAF50" font-family="monospace" font-size="10">
+    <text x="150" y="170" fill="#1a56db" font-family="monospace" font-size="10">
       // TODO: 收集碎碎念
     </text>
-    <text x="250" y="210" fill="#4CAF50" font-family="monospace" font-size="10">
+    <text x="250" y="210" fill="#1a56db" font-family="monospace" font-size="10">
       /* 系统化思考，结构化表达 */
     </text>
-    <text x="100" y="250" fill="#4CAF50" font-family="monospace" font-size="10">
+    <text x="100" y="250" fill="#1a56db" font-family="monospace" font-size="10">
       // 发现规律，找到共鸣
     </text>
-    <text x="300" y="290" fill="#4CAF50" font-family="monospace" font-size="10">
+    <text x="300" y="290" fill="#1a56db" font-family="monospace" font-size="10">
       /* 把零散的想法串成珍珠 */
     </text>
   </g>
   
   <!-- 中心圆形 -->
   <g transform="translate(500, 225)">
-    <circle cx="0" cy="0" r="70" fill="#263238" stroke="#90CAF9" stroke-width="2" />
-    <text x="0" y="0" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">碎碎念</text>
-    <text x="0" y="20" font-family="Arial" font-size="12" fill="#90CAF9" text-anchor="middle">THOUGHTS</text>
+    <circle cx="0" cy="0" r="70" fill="#ffffff" stroke="#5475e5" stroke-width="2" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.1))" />
+    <text x="0" y="0" font-family="Arial" font-size="16" font-weight="bold" fill="#2d3748" text-anchor="middle">碎碎念</text>
+    <text x="0" y="20" font-family="Arial" font-size="12" fill="#5475e5" text-anchor="middle">THOUGHTS</text>
   </g>
   
   <!-- 主题1: 技术探索 -->
   <g transform="translate(300, 175)">
-    <circle cx="0" cy="0" r="45" fill="url(#chatGradient)" stroke="#64B5F6" stroke-width="2" />
-    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">技术探索</text>
-    <text x="0" y="15" font-family="Arial" font-size="10" fill="#64B5F6" text-anchor="middle">TECH JOURNAL</text>
+    <circle cx="0" cy="0" r="45" fill="url(#chatGradient)" stroke="#3182ce" stroke-width="1.5" filter="drop-shadow(0px 2px 2px rgba(0,0,0,0.06))" />
+    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="#2d3748" text-anchor="middle">技术探索</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" fill="#3182ce" text-anchor="middle">TECH JOURNAL</text>
     <!-- 图标: 代码符号 -->
-    <path d="M-15,-25 L-5,-25 L5,25 L-5,25 Z" fill="none" stroke="#64B5F6" stroke-width="1" />
-    <path d="M10,-15 L20,0 L10,15" fill="none" stroke="#64B5F6" stroke-width="1" />
+    <path d="M-15,-25 L-5,-25 L5,25 L-5,25 Z" fill="none" stroke="#3182ce" stroke-width="1" />
+    <path d="M10,-15 L20,0 L10,15" fill="none" stroke="#3182ce" stroke-width="1" />
   </g>
   
   <!-- 主题2: 生活随笔 -->
   <g transform="translate(650, 125)">
-    <circle cx="0" cy="0" r="45" fill="url(#chatGradient)" stroke="#4CAF50" stroke-width="2" />
-    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">生活随笔</text>
-    <text x="0" y="15" font-family="Arial" font-size="10" fill="#4CAF50" text-anchor="middle">LIFE NOTES</text>
+    <circle cx="0" cy="0" r="45" fill="url(#chatGradient)" stroke="#38a169" stroke-width="1.5" filter="drop-shadow(0px 2px 2px rgba(0,0,0,0.06))" />
+    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="#2d3748" text-anchor="middle">生活随笔</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" fill="#38a169" text-anchor="middle">LIFE NOTES</text>
     <!-- 图标: 叶子符号 -->
-    <path d="M-10,-10 Q0,-25 10,-10 Q20,0 10,10 Q0,25 -10,10 Q-20,0 -10,-10 Z" fill="none" stroke="#4CAF50" stroke-width="1" />
-    <path d="M0,-10 L0,10" fill="none" stroke="#4CAF50" stroke-width="1" />
+    <path d="M-10,-10 Q0,-25 10,-10 Q20,0 10,10 Q0,25 -10,10 Q-20,0 -10,-10 Z" fill="none" stroke="#38a169" stroke-width="1" />
+    <path d="M0,-10 L0,10" fill="none" stroke="#38a169" stroke-width="1" />
   </g>
   
   <!-- 主题3: 创意闪光 -->
   <g transform="translate(700, 300)">
-    <circle cx="0" cy="0" r="45" fill="url(#chatGradient)" stroke="#FF9800" stroke-width="2" />
-    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">创意闪光</text>
-    <text x="0" y="15" font-family="Arial" font-size="10" fill="#FF9800" text-anchor="middle">SPARKS</text>
+    <circle cx="0" cy="0" r="45" fill="url(#chatGradient)" stroke="#ed8936" stroke-width="1.5" filter="drop-shadow(0px 2px 2px rgba(0,0,0,0.06))" />
+    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="#2d3748" text-anchor="middle">创意闪光</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" fill="#ed8936" text-anchor="middle">SPARKS</text>
     <!-- 图标: 灯泡符号 -->
-    <path d="M0,-25 Q15,-20 15,0 Q15,10 0,15 Q-15,10 -15,0 Q-15,-20 0,-25 Z" fill="none" stroke="#FF9800" stroke-width="1" />
-    <path d="M-5,15 L5,15" fill="none" stroke="#FF9800" stroke-width="1" />
-    <path d="M-3,20 L3,20" fill="none" stroke="#FF9800" stroke-width="1" />
+    <path d="M0,-25 Q15,-20 15,0 Q15,10 0,15 Q-15,10 -15,0 Q-15,-20 0,-25 Z" fill="none" stroke="#ed8936" stroke-width="1" />
+    <path d="M-5,15 L5,15" fill="none" stroke="#ed8936" stroke-width="1" />
+    <path d="M-3,20 L3,20" fill="none" stroke="#ed8936" stroke-width="1" />
   </g>
   
   <!-- 主题4: 热点思考 -->
   <g transform="translate(350, 325)">
-    <circle cx="0" cy="0" r="45" fill="url(#chatGradient)" stroke="#E91E63" stroke-width="2" />
-    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">热点思考</text>
-    <text x="0" y="15" font-family="Arial" font-size="10" fill="#E91E63" text-anchor="middle">REFLECTIONS</text>
+    <circle cx="0" cy="0" r="45" fill="url(#chatGradient)" stroke="#e53e3e" stroke-width="1.5" filter="drop-shadow(0px 2px 2px rgba(0,0,0,0.06))" />
+    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="#2d3748" text-anchor="middle">热点思考</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" fill="#e53e3e" text-anchor="middle">REFLECTIONS</text>
     <!-- 图标: 问号符号 -->
-    <path d="M-5,-15 Q-10,-20 -5,-25 Q0,-30 5,-25 Q10,-20 5,-15 Q0,-10 0,0" fill="none" stroke="#E91E63" stroke-width="1" />
-    <circle cx="0" cy="10" r="2" fill="#E91E63" />
+    <path d="M-5,-15 Q-10,-20 -5,-25 Q0,-30 5,-25 Q10,-20 5,-15 Q0,-10 0,0" fill="none" stroke="#e53e3e" stroke-width="1" />
+    <circle cx="0" cy="10" r="2" fill="#e53e3e" />
   </g>
   
   <!-- 主题5: 心情日记 -->
   <g transform="translate(500, 375)">
-    <circle cx="0" cy="0" r="45" fill="url(#chatGradient)" stroke="#9C27B0" stroke-width="2" />
-    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">心情日记</text>
-    <text x="0" y="15" font-family="Arial" font-size="10" fill="#9C27B0" text-anchor="middle">DIARY</text>
+    <circle cx="0" cy="0" r="45" fill="url(#chatGradient)" stroke="#805ad5" stroke-width="1.5" filter="drop-shadow(0px 2px 2px rgba(0,0,0,0.06))" />
+    <text x="0" y="-5" font-family="Arial" font-size="12" font-weight="bold" fill="#2d3748" text-anchor="middle">心情日记</text>
+    <text x="0" y="15" font-family="Arial" font-size="10" fill="#805ad5" text-anchor="middle">DIARY</text>
     <!-- 图标: 笔记符号 -->
-    <path d="M-15,-15 L15,-15 L15,15 L-15,15 Z" fill="none" stroke="#9C27B0" stroke-width="1" />
-    <path d="M-10,-8 L10,-8" fill="none" stroke="#9C27B0" stroke-width="1" />
-    <path d="M-10,0 L10,0" fill="none" stroke="#9C27B0" stroke-width="1" />
-    <path d="M-10,8 L5,8" fill="none" stroke="#9C27B0" stroke-width="1" />
+    <path d="M-15,-15 L15,-15 L15,15 L-15,15 Z" fill="none" stroke="#805ad5" stroke-width="1" />
+    <path d="M-10,-8 L10,-8" fill="none" stroke="#805ad5" stroke-width="1" />
+    <path d="M-10,0 L10,0" fill="none" stroke="#805ad5" stroke-width="1" />
+    <path d="M-10,8 L5,8" fill="none" stroke="#805ad5" stroke-width="1" />
   </g>
   
   <!-- 连接线 -->
-  <g opacity="0.6">
-    <path d="M500,155 L300,175" stroke="#64B5F6" stroke-width="1" fill="none" />
-    <path d="M500,155 L650,125" stroke="#4CAF50" stroke-width="1" fill="none" />
-    <path d="M570,225 L700,300" stroke="#FF9800" stroke-width="1" fill="none" />
-    <path d="M430,225 L350,325" stroke="#E91E63" stroke-width="1" fill="none" />
-    <path d="M500,295 L500,375" stroke="#9C27B0" stroke-width="1" fill="none" />
+  <g opacity="0.4">
+    <path d="M500,155 L300,175" stroke="#3182ce" stroke-width="1" fill="none" stroke-dasharray="2" />
+    <path d="M500,155 L650,125" stroke="#38a169" stroke-width="1" fill="none" stroke-dasharray="2" />
+    <path d="M570,225 L700,300" stroke="#ed8936" stroke-width="1" fill="none" stroke-dasharray="2" />
+    <path d="M430,225 L350,325" stroke="#e53e3e" stroke-width="1" fill="none" stroke-dasharray="2" />
+    <path d="M500,295 L500,375" stroke="#805ad5" stroke-width="1" fill="none" stroke-dasharray="2" />
   </g>
   
   <!-- 装饰性粒子 -->
-  <g opacity="0.7">
-    <circle cx="450" cy="150" r="2" fill="#64B5F6" filter="url(#glow)" />
-    <circle cx="570" cy="220" r="2" fill="#4CAF50" filter="url(#glow)" />
-    <circle cx="680" cy="260" r="2" fill="#FF9800" filter="url(#glow)" />
-    <circle cx="730" cy="190" r="2" fill="#E91E63" filter="url(#glow)" />
-    <circle cx="380" cy="280" r="2" fill="#9C27B0" filter="url(#glow)" />
-    <circle cx="520" cy="300" r="2" fill="#4CAF50" filter="url(#glow)" />
-    <circle cx="800" cy="160" r="2" fill="#FF9800" filter="url(#glow)" />
-    <circle cx="490" cy="230" r="2" fill="#E91E63" filter="url(#glow)" />
+  <g opacity="0.6">
+    <circle cx="450" cy="150" r="2" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="570" cy="220" r="2" fill="#38a169" filter="url(#glow)" />
+    <circle cx="680" cy="260" r="2" fill="#ed8936" filter="url(#glow)" />
+    <circle cx="730" cy="190" r="2" fill="#e53e3e" filter="url(#glow)" />
+    <circle cx="380" cy="280" r="2" fill="#805ad5" filter="url(#glow)" />
+    <circle cx="520" cy="300" r="2" fill="#38a169" filter="url(#glow)" />
+    <circle cx="800" cy="160" r="2" fill="#ed8936" filter="url(#glow)" />
+    <circle cx="490" cy="230" r="2" fill="#e53e3e" filter="url(#glow)" />
   </g>
   
   <!-- 标题 -->
-  <text x="500" y="70" font-family="Arial" font-size="30" font-weight="bold" fill="white" text-anchor="middle" style="letter-spacing: 5px;">碎碎念空间</text>
-  <text x="500" y="95" font-family="Arial" font-size="14" fill="#90CAF9" text-anchor="middle" style="letter-spacing: 2px;">THOUGHT SPACE</text>
+  <text x="500" y="70" font-family="Arial" font-size="30" font-weight="bold" fill="#2d3748" text-anchor="middle" style="letter-spacing: 5px;">碎碎念空间</text>
+  <text x="500" y="95" font-family="Arial" font-size="14" fill="#5475e5" text-anchor="middle" style="letter-spacing: 2px;">THOUGHT SPACE</text>
   
   <!-- 底部装饰 -->
-  <rect x="350" y="415" width="300" height="1" fill="#90CAF9" />
-  <text x="500" y="435" font-family="monospace" font-size="12" fill="#90CAF9" text-anchor="middle">// 思想汇聚，灵感涌现</text>
+  <rect x="350" y="415" width="300" height="1" fill="#5475e5" />
+  <text x="500" y="435" font-family="monospace" font-size="12" fill="#5475e5" text-anchor="middle">// 思想汇聚，灵感涌现</text>
 </svg>
