@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2a3a" />
+      <stop offset="100%" stop-color="#0f1c2d" />
+    </linearGradient>
+    
+    <!-- 对话框渐变 -->
+    <linearGradient id="chatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#263238" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#37474F" stop-opacity="0.7" />
+    </linearGradient>
+    
+    <!-- 光晕效果 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- 波浪图案 -->
+    <pattern id="wave" width="100" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 10 Q 12.5 0, 25 10 T 50 10 T 75 10 T 100 10" stroke="#4FC3F7" fill="none" stroke-width="1" stroke-opacity="0.3" />
+    </pattern>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1000" height="450" fill="url(#bgGradient)" />
+  
+  <!-- 波浪背景装饰 -->
+  <rect width="1000" height="450" fill="url(#wave)" opacity="0.2" />
+  
+  <!-- 代码注释装饰 - 背景 -->
+  <g opacity="0.1">
+    <text x="50" y="50" fill="#4CAF50" font-family="monospace" font-size="10">
+      /* 思想的交流是进步的源泉 */
+    </text>
+    <text x="200" y="90" fill="#4CAF50" font-family="monospace" font-size="10">
+      // 每一条留言都是珍贵的反馈
+    </text>
+    <text x="350" y="130" fill="#4CAF50" font-family="monospace" font-size="10">
+      /* 开源精神，自由分享 */
+    </text>
+    <text x="150" y="170" fill="#4CAF50" font-family="monospace" font-size="10">
+      // TODO: 回复所有留言
+    </text>
+    <text x="250" y="210" fill="#4CAF50" font-family="monospace" font-size="10">
+      /* 代码让世界互联，评论让思想互通 */
+    </text>
+    <text x="100" y="250" fill="#4CAF50" font-family="monospace" font-size="10">
+      // 期待您的宝贵意见
+    </text>
+    <text x="300" y="290" fill="#4CAF50" font-family="monospace" font-size="10">
+      /* 技术因交流而进步 */
+    </text>
+  </g>
+  
+  <!-- 对话气泡图案 -->
+  <!-- 气泡1 -->
+  <path d="M250,180 Q250,150 280,150 L370,150 Q400,150 400,180 L400,220 Q400,250 370,250 L280,250 Q250,250 250,220 Z" 
+        fill="url(#chatGradient)" stroke="#64B5F6" stroke-width="1" />
+  <circle cx="275" cy="200" r="3" fill="#64B5F6" />
+  <circle cx="295" cy="200" r="3" fill="#64B5F6" />
+  <circle cx="315" cy="200" r="3" fill="#64B5F6" />
+  
+  <!-- 气泡2 -->
+  <path d="M600,140 Q600,110 630,110 L720,110 Q750,110 750,140 L750,180 Q750,210 720,210 L630,210 Q600,210 600,180 Z" 
+        fill="url(#chatGradient)" stroke="#4CAF50" stroke-width="1" />
+  <text x="675" y="170" font-family="monospace" font-size="12" fill="#4CAF50" text-anchor="middle">{ ideas }</text>
+  
+  <!-- 气泡3 -->
+  <path d="M500,300 Q500,270 530,270 L620,270 Q650,270 650,300 L650,340 Q650,370 620,370 L530,370 Q500,370 500,340 Z" 
+        fill="url(#chatGradient)" stroke="#FF9800" stroke-width="1" />
+  <text x="575" y="330" font-family="monospace" font-size="12" fill="#FF9800" text-anchor="middle">[ feedback ]</text>
+  
+  <!-- 气泡4 -->
+  <path d="M750,250 Q750,220 780,220 L870,220 Q900,220 900,250 L900,290 Q900,320 870,320 L780,320 Q750,320 750,290 Z" 
+        fill="url(#chatGradient)" stroke="#E91E63" stroke-width="1" />
+  <text x="825" y="280" font-family="monospace" font-size="12" fill="#E91E63" text-anchor="middle">/* dialog */</text>
+  
+  <!-- 连接线 -->
+  <g opacity="0.6">
+    <path d="M400,200 C450,200 450,160 500,160" stroke="#64B5F6" stroke-width="1" fill="none" />
+    <path d="M600,160 C550,160 560,200 520,200" stroke="#4CAF50" stroke-width="1" fill="none" />
+    <path d="M750,170 C700,170 690,280 650,320" stroke="#FF9800" stroke-width="1" fill="none" />
+    <path d="M750,270 C700,270 690,230 650,180" stroke="#E91E63" stroke-width="1" fill="none" />
+  </g>
+  
+  <!-- 装饰性粒子 -->
+  <g opacity="0.7">
+    <circle cx="450" cy="150" r="2" fill="#64B5F6" filter="url(#glow)" />
+    <circle cx="570" cy="220" r="2" fill="#4CAF50" filter="url(#glow)" />
+    <circle cx="680" cy="260" r="2" fill="#FF9800" filter="url(#glow)" />
+    <circle cx="730" cy="190" r="2" fill="#E91E63" filter="url(#glow)" />
+    <circle cx="380" cy="280" r="2" fill="#64B5F6" filter="url(#glow)" />
+    <circle cx="520" cy="300" r="2" fill="#4CAF50" filter="url(#glow)" />
+    <circle cx="800" cy="160" r="2" fill="#FF9800" filter="url(#glow)" />
+    <circle cx="490" cy="230" r="2" fill="#E91E63" filter="url(#glow)" />
+  </g>
+  
+  <!-- 中心图标 - 留言板 -->
+  <g transform="translate(500, 225)">
+    <circle cx="0" cy="0" r="45" fill="#263238" stroke="#90CAF9" stroke-width="2" />
+    <!-- 留言板图标 -->
+    <path d="M-20,-15 L20,-15 L20,15 L5,15 L0,25 L-5,15 L-20,15 Z" fill="none" stroke="#90CAF9" stroke-width="2" />
+    <line x1="-12" y1="-5" x2="12" y2="-5" stroke="#90CAF9" stroke-width="2" />
+    <line x1="-12" y1="5" x2="5" y2="5" stroke="#90CAF9" stroke-width="2" />
+  </g>
+  
+  <!-- 标题 -->
+  <text x="500" y="70" font-family="Arial" font-size="30" font-weight="bold" fill="white" text-anchor="middle" style="letter-spacing: 5px;">COMMENTS</text>
+  <text x="500" y="95" font-family="Arial" font-size="14" fill="#90CAF9" text-anchor="middle" style="letter-spacing: 2px;">SHARE YOUR THOUGHTS</text>
+  
+  <!-- 底部装饰 -->
+  <rect x="350" y="415" width="300" height="1" fill="#90CAF9" />
+  <text x="500" y="435" font-family="monospace" font-size="12" fill="#90CAF9" text-anchor="middle">// 思想碰撞，激发创新</text>
+</svg>
