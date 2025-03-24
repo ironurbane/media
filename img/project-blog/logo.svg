@@ -1,44 +1,143 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="949" height="256" viewbox="0 0 949 256">
-  <!-- Left side: Tiger cub (child) -->
-  <g transform="translate(170, 128) scale(3.4)">
-    <!-- Tiger face -->
-    <circle cx="0" cy="0" r="25" fill="#f8a348" />
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="949" height="256" viewBox="0 0 949 256">
+  <!-- 背景：雨天 -->
+  <rect width="949" height="256" fill="#2d3748" />
+  
+  <!-- 云层 -->
+  <path d="M0 0 H949 V80 Q900 60 850 70 Q800 50 750 60 Q700 40 650 50 Q600 30 550 40 Q500 20 450 30 Q400 10 350 20 Q300 0 250 10 Q200 -10 150 0 Q100 -20 50 -10 Q25 -25 0 -15 Z" fill="#4a5568" />
+  
+  <!-- 地面线 -->
+  <path d="M0 235 H949" stroke="#4a5568" stroke-width="2" />
+  
+  <!-- 雨滴 -->
+  <g opacity="0.7">
+    <line x1="100" y1="10" x2="90" y2="50" stroke="#a0aec0" stroke-width="2" />
+    <line x1="200" y1="20" x2="190" y2="60" stroke="#a0aec0" stroke-width="2" />
+    <line x1="300" y1="10" x2="290" y2="50" stroke="#a0aec0" stroke-width="2" />
+    <line x1="400" y1="20" x2="390" y2="60" stroke="#a0aec0" stroke-width="2" />
+    <line x1="500" y1="10" x2="490" y2="50" stroke="#a0aec0" stroke-width="2" />
+    <line x1="600" y1="20" x2="590" y2="60" stroke="#a0aec0" stroke-width="2" />
+    <line x1="700" y1="10" x2="690" y2="50" stroke="#a0aec0" stroke-width="2" />
+    <line x1="800" y1="20" x2="790" y2="60" stroke="#a0aec0" stroke-width="2" />
     
-    <!-- Tiger ears -->
-    <path d="M-15 -18 Q-22 -30 -10 -20" fill="#f8a348" stroke="#e67700" stroke-width="1.5" />
-    <path d="M15 -18 Q22 -30 10 -20" fill="#f8a348" stroke="#e67700" stroke-width="1.5" />
+    <line x1="150" y1="70" x2="140" y2="110" stroke="#a0aec0" stroke-width="2" />
+    <line x1="250" y1="80" x2="240" y2="120" stroke="#a0aec0" stroke-width="2" />
+    <line x1="350" y1="70" x2="340" y2="110" stroke="#a0aec0" stroke-width="2" />
+    <line x1="450" y1="80" x2="440" y2="120" stroke="#a0aec0" stroke-width="2" />
+    <line x1="550" y1="70" x2="540" y2="110" stroke="#a0aec0" stroke-width="2" />
+    <line x1="650" y1="80" x2="640" y2="120" stroke="#a0aec0" stroke-width="2" />
+    <line x1="750" y1="70" x2="740" y2="110" stroke="#a0aec0" stroke-width="2" />
+    <line x1="850" y1="80" x2="840" y2="120" stroke="#a0aec0" stroke-width="2" />
     
-    <!-- Tiger stripes (simplified) -->
-    <path d="M-18 0 Q-14 -8 -10 0" stroke="#e67700" stroke-width="2" fill="none" />
-    <path d="M18 0 Q14 -8 10 0" stroke="#e67700" stroke-width="2" fill="none" />
+    <line x1="125" y1="130" x2="115" y2="170" stroke="#a0aec0" stroke-width="2" />
+    <line x1="225" y1="140" x2="215" y2="180" stroke="#a0aec0" stroke-width="2" />
+    <line x1="325" y1="130" x2="315" y2="170" stroke="#a0aec0" stroke-width="2" />
+    <line x1="425" y1="140" x2="415" y2="180" stroke="#a0aec0" stroke-width="2" />
+    <line x1="525" y1="130" x2="515" y2="170" stroke="#a0aec0" stroke-width="2" />
+    <line x1="625" y1="140" x2="615" y2="180" stroke="#a0aec0" stroke-width="2" />
+    <line x1="725" y1="130" x2="715" y2="170" stroke="#a0aec0" stroke-width="2" />
+    <line x1="825" y1="140" x2="815" y2="180" stroke="#a0aec0" stroke-width="2" />
     
-    <!-- Tiger eyes -->
-    <circle cx="-8" cy="-5" r="4" fill="white" />
-    <circle cx="8" cy="-5" r="4" fill="white" />
-    <circle cx="-8" cy="-5" r="2" fill="black" />
-    <circle cx="8" cy="-5" r="2" fill="black" />
-    
-    <!-- Tiger nose and mouth -->
-    <circle cx="0" cy="2" r="3" fill="#ffb380" />
-    <path d="M-7 10 Q0 15 7 10" stroke="black" stroke-width="1.5" fill="none" />
+    <line x1="175" y1="190" x2="165" y2="230" stroke="#a0aec0" stroke-width="2" />
+    <line x1="275" y1="200" x2="265" y2="240" stroke="#a0aec0" stroke-width="2" />
+    <line x1="375" y1="190" x2="365" y2="230" stroke="#a0aec0" stroke-width="2" />
+    <line x1="475" y1="200" x2="465" y2="240" stroke="#a0aec0" stroke-width="2" />
+    <line x1="575" y1="190" x2="565" y2="230" stroke="#a0aec0" stroke-width="2" />
+    <line x1="675" y1="200" x2="665" y2="240" stroke="#a0aec0" stroke-width="2" />
+    <line x1="775" y1="190" x2="765" y2="230" stroke="#a0aec0" stroke-width="2" />
+    <line x1="875" y1="200" x2="865" y2="240" stroke="#a0aec0" stroke-width="2" />
   </g>
   
-  <!-- Center: Small heart (symbolizing love for mother) -->
-  <path d="M320 128 Q330 90 350 128 Q370 90 380 128 Q380 150 350 180 Q320 150 320 128" fill="#ff9999" />
+  <!-- 闪电 -->
+  <path d="M200 0 L230 40 L210 50 L240 90" stroke="#f6e05e" stroke-width="4" fill="none" />
+  <path d="M700 20 L670 60 L690 70 L660 110" stroke="#f6e05e" stroke-width="4" fill="none" />
   
-  <!-- Right side: Mother silhouette with code/art elements -->
-  <g transform="translate(550, 128) scale(3.2)">
-    <!-- Mother silhouette (larger tiger outline) -->
-    <path d="M0 -30 Q40 -30 40 0 Q40 30 0 30 Q-40 30 -40 0 Q-40 -30 0 -30" fill="none" stroke="#a0aec0" stroke-width="1.5" />
+  <!-- 母鸡 - 侧视图，调整翅膀位置和尺寸 -->
+  <g transform="translate(474.5, 128)">
+    <!-- 鸡的身体 - 适当调整 -->
+    <ellipse cx="0" cy="50" rx="90" ry="60" fill="#b7791f" stroke="#744210" stroke-width="3" />
     
-    <!-- Simplified code brackets (representing code) -->
-    <path d="M-20 -10 L-25 0 L-20 10" stroke="#4a5568" stroke-width="1.5" fill="none" />
-    <path d="M20 -10 L25 0 L20 10" stroke="#4a5568" stroke-width="1.5" fill="none" />
+    <!-- 鸡的翅膀 - 更大且位置更低 -->
+    <path d="M-30 30 C-120 -80 -280 -20 -320 80 C-250 120 -130 100 -30 60" fill="#b7791f" stroke="#744210" stroke-width="3" />
+    <path d="M-70 20 C-140 -40 -220 -10 -270 30" fill="none" stroke="#744210" stroke-width="2" />
+    <path d="M-80 40 C-150 0 -210 20 -260 60" fill="none" stroke="#744210" stroke-width="2" />
+    <path d="M-90 60 C-160 30 -220 50 -270 90" fill="none" stroke="#744210" stroke-width="2" />
     
-    <!-- Artistic elements (brush stroke suggestion) -->
-    <path d="M-10 -5 Q0 -15 10 -5 Q0 5 -10 -5" fill="#718096" opacity="0.5" />
+    <!-- 鸡的脖子和头 - 延伸到画布顶部 -->
+    <path d="M60 -10 C70 -60 90 -90 110 -110 C120 -100 120 -80 110 -70" fill="#b7791f" stroke="#744210" stroke-width="3" />
+    
+    <!-- 鸡冠 - 在上边缘但不超过 -->
+    <path d="M110 -110 L115 -125 L120 -110 L125 -125 L130 -110 L135 -125 L140 -110" fill="#e53e3e" stroke="#c53030" stroke-width="2" />
+    
+    <!-- 鸡嘴 -->
+    <path d="M120 -100 L150 -95 L120 -90" fill="#dd6b20" stroke="#c05621" stroke-width="2" />
+    
+    <!-- 鸡眼睛 -->
+    <circle cx="115" cy="-100" r="4" fill="white" />
+    <circle cx="115" cy="-100" r="2" fill="black" />
+    
+    <!-- 鸡的尾巴 -->
+    <path d="M-70 30 C-110 -40 -140 -10 -160 40" fill="#b7791f" stroke="#744210" stroke-width="3" />
+    <path d="M-100 0 C-120 -15 -130 -5 -140 10" fill="#b7791f" stroke="#744210" stroke-width="2" />
+    <path d="M-110 15 C-130 0 -140 10 -150 25" fill="#b7791f" stroke="#744210" stroke-width="2" />
+    
+    <!-- 鸡腿和爪 - 延伸到地面 -->
+    <path d="M-40 90 L-50 125" stroke="#b7791f" stroke-width="8" stroke-linecap="round" />
+    <path d="M-50 125 L-60 135 M-50 125 L-50 135 M-50 125 L-40 135" stroke="#744210" stroke-width="3" stroke-linecap="round" />
+    
+    <path d="M40 90 L50 125" stroke="#b7791f" stroke-width="8" stroke-linecap="round" />
+    <path d="M50 125 L60 135 M50 125 L50 135 M50 125 L40 135" stroke="#744210" stroke-width="3" stroke-linecap="round" />
   </g>
   
-  <!-- Connecting dotted line (showing relationship) -->
-  <path d="M270 128 Q450 80 480 128" stroke="#cbd5e0" stroke-width="4" stroke-dasharray="12,8" fill="none" />
+  <!-- 卡通老虎 - 侧视图，站在地上，有王字纹 -->
+  <g transform="translate(380, 215)">
+    <!-- 老虎身体 - 卡通风格，站在地上 -->
+    <ellipse cx="0" cy="-20" rx="40" ry="25" fill="#f6ad55" stroke="#dd6b20" stroke-width="2.5" />
+    
+    <!-- 老虎头部 - 圆润可爱 -->
+    <circle cx="40" cy="-35" r="25" fill="#f6ad55" stroke="#dd6b20" stroke-width="2.5" />
+    
+    <!-- 老虎耳朵 - 圆润 -->
+    <circle cx="30" cy="-55" r="8" fill="#f6ad55" stroke="#dd6b20" stroke-width="1.5" />
+    <circle cx="50" cy="-55" r="8" fill="#f6ad55" stroke="#dd6b20" stroke-width="1.5" />
+    
+    <!-- 老虎内耳 -->
+    <circle cx="30" cy="-55" r="4" fill="#e27730" />
+    <circle cx="50" cy="-55" r="4" fill="#e27730" />
+    
+    <!-- 老虎额头上的"王"字纹路 -->
+    <path d="M40 -45 L40 -35" stroke="#000000" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M30 -45 L50 -45" stroke="#000000" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    
+    <!-- 老虎眼睛 - 大而可爱 -->
+    <circle cx="32" cy="-35" r="5" fill="white" stroke="#000000" stroke-width="0.8" />
+    <circle cx="32" cy="-35" r="2.5" fill="black" />
+    <circle cx="48" cy="-35" r="5" fill="white" stroke="#000000" stroke-width="0.8" />
+    <circle cx="48" cy="-35" r="2.5" fill="black" />
+    
+    <!-- 老虎鼻子和嘴 - 可爱风格 -->
+    <ellipse cx="40" cy="-25" r="4" fill="#dd6b20" />
+    <path d="M35 -20 C38 -15 42 -15 45 -20" stroke="black" stroke-width="1.5" fill="none" />
+    
+    <!-- 老虎胡须 - 简短可爱 -->
+    <line x1="30" y1="-25" x2="20" y2="-27" stroke="black" stroke-width="1" />
+    <line x1="30" y1="-22" x2="20" y2="-20" stroke="black" stroke-width="1" />
+    <line x1="50" y1="-25" x2="60" y2="-27" stroke="black" stroke-width="1" />
+    <line x1="50" y1="-22" x2="60" y2="-20" stroke="black" stroke-width="1" />
+    
+    <!-- 老虎条纹 - 简化卡通风格 -->
+    <path d="M15 -30 C20 -25 20 -20 15 -15" stroke="#000000" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M0 -30 C5 -25 5 -20 0 -15" stroke="#000000" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M-15 -30 C-10 -25 -10 -20 -15 -15" stroke="#000000" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    <path d="M-30 -25 C-25 -20 -25 -15 -30 -10" stroke="#000000" stroke-width="2.5" fill="none" stroke-linecap="round" />
+    
+    <!-- 老虎腿 - 站在地上 -->
+    <path d="M-25 -5 L-25 20" stroke="#f6ad55" stroke-width="7" stroke-linecap="round" />
+    <path d="M-5 -5 L-5 20" stroke="#f6ad55" stroke-width="7" stroke-linecap="round" />
+    <path d="M15 -5 L15 20" stroke="#f6ad55" stroke-width="7" stroke-linecap="round" />
+    <path d="M35 -5 L35 20" stroke="#f6ad55" stroke-width="7" stroke-linecap="round" />
+    
+    <!-- 老虎尾巴 - 卡通风格，略微上翘 -->
+    <path d="M-35 -20 C-55 -30 -75 -25 -80 -10" stroke="#f6ad55" stroke-width="6" fill="none" stroke-linecap="round" />
+    <path d="M-80 -10 L-85 -5" stroke="#000000" stroke-width="5" fill="none" stroke-linecap="round" />
+  </g>
 </svg>
