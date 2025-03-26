@@ -2,14 +2,14 @@
   <!-- 背景渐变 -->
   <defs>
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#091b2e" />
-      <stop offset="100%" stop-color="#2c3e60" />
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#edf2f7" />
     </linearGradient>
     
     <!-- 相框渐变 -->
     <linearGradient id="frameGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2c3e50" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#34495e" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f5f7fa" stop-opacity="0.8" />
     </linearGradient>
     
     <!-- 玻璃效果 -->
@@ -26,19 +26,24 @@
     
     <!-- 细线图案 -->
     <pattern id="delicateLines" width="100" height="100" patternUnits="userSpaceOnUse">
-      <path d="M0,50 L100,50" stroke="#e74c3c" stroke-width="0.3" stroke-opacity="0.15" fill="none" />
-      <path d="M50,0 L50,100" stroke="#3498db" stroke-width="0.3" stroke-opacity="0.15" fill="none" />
-      <path d="M0,25 L100,25" stroke="#e74c3c" stroke-width="0.2" stroke-opacity="0.1" fill="none" />
-      <path d="M0,75 L100,75" stroke="#e74c3c" stroke-width="0.2" stroke-opacity="0.1" fill="none" />
-      <path d="M25,0 L25,100" stroke="#3498db" stroke-width="0.2" stroke-opacity="0.1" fill="none" />
-      <path d="M75,0 L75,100" stroke="#3498db" stroke-width="0.2" stroke-opacity="0.1" fill="none" />
+      <path d="M0,50 L100,50" stroke="#3182ce" stroke-width="0.3" stroke-opacity="0.15" fill="none" />
+      <path d="M50,0 L50,100" stroke="#5475e5" stroke-width="0.3" stroke-opacity="0.15" fill="none" />
+      <path d="M0,25 L100,25" stroke="#3182ce" stroke-width="0.2" stroke-opacity="0.1" fill="none" />
+      <path d="M0,75 L100,75" stroke="#3182ce" stroke-width="0.2" stroke-opacity="0.1" fill="none" />
+      <path d="M25,0 L25,100" stroke="#5475e5" stroke-width="0.2" stroke-opacity="0.1" fill="none" />
+      <path d="M75,0 L75,100" stroke="#5475e5" stroke-width="0.2" stroke-opacity="0.1" fill="none" />
     </pattern>
     
     <!-- 网格图案 -->
     <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
-      <rect width="40" height="40" fill="none" stroke="#3498db" stroke-width="0.2" stroke-opacity="0.1" />
-      <line x1="0" y1="20" x2="40" y2="20" stroke="#3498db" stroke-width="0.1" stroke-opacity="0.1" />
-      <line x1="20" y1="0" x2="20" y2="40" stroke="#3498db" stroke-width="0.1" stroke-opacity="0.1" />
+      <rect width="40" height="40" fill="none" stroke="#5475e5" stroke-width="0.2" stroke-opacity="0.1" />
+      <line x1="0" y1="20" x2="40" y2="20" stroke="#5475e5" stroke-width="0.1" stroke-opacity="0.1" />
+      <line x1="20" y1="0" x2="20" y2="40" stroke="#5475e5" stroke-width="0.1" stroke-opacity="0.1" />
+    </pattern>
+    
+    <!-- 波浪图案 -->
+    <pattern id="wave" width="100" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 10 Q 12.5 0, 25 10 T 50 10 T 75 10 T 100 10" stroke="#4287f5" fill="none" stroke-width="0.5" stroke-opacity="0.2" />
     </pattern>
   </defs>
   
@@ -48,19 +53,20 @@
   <!-- 网格背景纹理 -->
   <rect width="1000" height="450" fill="url(#gridPattern)" opacity="0.4" />
   <rect width="1000" height="450" fill="url(#delicateLines)" opacity="0.5" />
+  <rect width="1000" height="450" fill="url(#wave)" opacity="0.15" />
   
   <!-- 文艺诗句装饰 - 背景 -->
   <g opacity="0.3" font-family="serif">
-    <text x="120" y="50" fill="#e74c3c" font-size="11" font-style="italic">
+    <text x="120" y="50" fill="#3182ce" font-size="11" font-style="italic">
       时光的碎片，记忆的珍藏
     </text>
-    <text x="750" y="70" fill="#3498db" font-size="11" font-style="italic">
+    <text x="750" y="70" fill="#5475e5" font-size="11" font-style="italic">
       每一瞬间，都是永恒
     </text>
-    <text x="180" y="380" fill="#e74c3c" font-size="11" font-style="italic">
+    <text x="180" y="380" fill="#3182ce" font-size="11" font-style="italic">
       影像里的诗，照片中的歌
     </text>
-    <text x="680" y="410" fill="#3498db" font-size="11" font-style="italic">
+    <text x="680" y="410" fill="#5475e5" font-size="11" font-style="italic">
       定格心动的瞬间
     </text>
   </g>
@@ -69,44 +75,44 @@
   <g opacity="0.2">
     <!-- 左上电路 -->
     <path d="M50,50 L150,50 L150,70 L180,70 L180,100 L210,100 L210,120" 
-          fill="none" stroke="#3498db" stroke-width="1" />
-    <circle cx="150" cy="50" r="3" fill="#3498db" />
-    <circle cx="180" cy="70" r="3" fill="#3498db" />
-    <circle cx="210" cy="100" r="3" fill="#3498db" />
+          fill="none" stroke="#5475e5" stroke-width="1" />
+    <circle cx="150" cy="50" r="3" fill="#5475e5" />
+    <circle cx="180" cy="70" r="3" fill="#5475e5" />
+    <circle cx="210" cy="100" r="3" fill="#5475e5" />
     
     <!-- 右上电路 -->
     <path d="M950,50 L850,50 L850,70 L820,70 L820,100 L790,100 L790,120" 
-          fill="none" stroke="#e74c3c" stroke-width="1" />
-    <circle cx="850" cy="50" r="3" fill="#e74c3c" />
-    <circle cx="820" cy="70" r="3" fill="#e74c3c" />
-    <circle cx="790" cy="100" r="3" fill="#e74c3c" />
+          fill="none" stroke="#3182ce" stroke-width="1" />
+    <circle cx="850" cy="50" r="3" fill="#3182ce" />
+    <circle cx="820" cy="70" r="3" fill="#3182ce" />
+    <circle cx="790" cy="100" r="3" fill="#3182ce" />
     
     <!-- 左下电路 -->
     <path d="M50,400 L150,400 L150,380 L180,380 L180,350 L210,350 L210,330" 
-          fill="none" stroke="#3498db" stroke-width="1" />
-    <circle cx="150" cy="400" r="3" fill="#3498db" />
-    <circle cx="180" cy="380" r="3" fill="#3498db" />
-    <circle cx="210" cy="350" r="3" fill="#3498db" />
+          fill="none" stroke="#5475e5" stroke-width="1" />
+    <circle cx="150" cy="400" r="3" fill="#5475e5" />
+    <circle cx="180" cy="380" r="3" fill="#5475e5" />
+    <circle cx="210" cy="350" r="3" fill="#5475e5" />
     
     <!-- 右下电路 -->
     <path d="M950,400 L850,400 L850,380 L820,380 L820,350 L790,350 L790,330" 
-          fill="none" stroke="#e74c3c" stroke-width="1" />
-    <circle cx="850" cy="400" r="3" fill="#e74c3c" />
-    <circle cx="820" cy="380" r="3" fill="#e74c3c" />
-    <circle cx="790" cy="350" r="3" fill="#e74c3c" />
+          fill="none" stroke="#3182ce" stroke-width="1" />
+    <circle cx="850" cy="400" r="3" fill="#3182ce" />
+    <circle cx="820" cy="380" r="3" fill="#3182ce" />
+    <circle cx="790" cy="350" r="3" fill="#3182ce" />
   </g>
   
   <!-- 中央展示区几何框架 -->
   <g opacity="0.8">
     <!-- 主框架 -->
-    <rect x="280" y="120" width="440" height="250" fill="none" stroke="#3498db" stroke-width="1" rx="5" ry="5" />
+    <rect x="280" y="120" width="440" height="250" fill="none" stroke="#5475e5" stroke-width="1" rx="5" ry="5" />
     
     <!-- 装饰几何框架 -->
-    <rect x="270" y="110" width="460" height="270" fill="none" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="5,3" rx="8" ry="8" />
+    <rect x="270" y="110" width="460" height="270" fill="none" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="5,3" rx="8" ry="8" />
     
     <!-- 科技感装饰线 -->
-    <line x1="280" y1="135" x2="720" y2="135" stroke="#3498db" stroke-width="0.5" stroke-dasharray="1,2" />
-    <line x1="280" y1="355" x2="720" y2="355" stroke="#3498db" stroke-width="0.5" stroke-dasharray="1,2" />
+    <line x1="280" y1="135" x2="720" y2="135" stroke="#5475e5" stroke-width="0.5" stroke-dasharray="1,2" />
+    <line x1="280" y1="355" x2="720" y2="355" stroke="#5475e5" stroke-width="0.5" stroke-dasharray="1,2" />
   </g>
   
   <!-- 照片展示区 -->
@@ -116,159 +122,159 @@
     
     <!-- 照片网格 -->
     <!-- 第一行 -->
-    <rect x="310" y="160" width="125" height="80" fill="#2c3e50" stroke="#3498db" stroke-width="1" rx="2" ry="2" />
-    <rect x="315" y="165" width="115" height="70" fill="#34495e" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="1,1" />
+    <rect x="310" y="160" width="125" height="80" fill="#ffffff" stroke="#5475e5" stroke-width="1" rx="2" ry="2" />
+    <rect x="315" y="165" width="115" height="70" fill="#f5f7fa" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="1,1" />
     
-    <rect x="445" y="160" width="125" height="80" fill="#2c3e50" stroke="#3498db" stroke-width="1" rx="2" ry="2" />
-    <rect x="450" y="165" width="115" height="70" fill="#34495e" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="1,1" />
+    <rect x="445" y="160" width="125" height="80" fill="#ffffff" stroke="#5475e5" stroke-width="1" rx="2" ry="2" />
+    <rect x="450" y="165" width="115" height="70" fill="#f5f7fa" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="1,1" />
     
-    <rect x="580" y="160" width="110" height="80" fill="#2c3e50" stroke="#3498db" stroke-width="1" rx="2" ry="2" />
-    <rect x="585" y="165" width="100" height="70" fill="#34495e" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="1,1" />
+    <rect x="580" y="160" width="110" height="80" fill="#ffffff" stroke="#5475e5" stroke-width="1" rx="2" ry="2" />
+    <rect x="585" y="165" width="100" height="70" fill="#f5f7fa" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="1,1" />
     
     <!-- 第二行 -->
-    <rect x="310" y="250" width="125" height="80" fill="#2c3e50" stroke="#3498db" stroke-width="1" rx="2" ry="2" />
-    <rect x="315" y="255" width="115" height="70" fill="#34495e" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="1,1" />
+    <rect x="310" y="250" width="125" height="80" fill="#ffffff" stroke="#5475e5" stroke-width="1" rx="2" ry="2" />
+    <rect x="315" y="255" width="115" height="70" fill="#f5f7fa" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="1,1" />
     
-    <rect x="445" y="250" width="125" height="80" fill="#2c3e50" stroke="#3498db" stroke-width="1" rx="2" ry="2" />
-    <rect x="450" y="255" width="115" height="70" fill="#34495e" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="1,1" />
+    <rect x="445" y="250" width="125" height="80" fill="#ffffff" stroke="#5475e5" stroke-width="1" rx="2" ry="2" />
+    <rect x="450" y="255" width="115" height="70" fill="#f5f7fa" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="1,1" />
     
-    <rect x="580" y="250" width="110" height="80" fill="#2c3e50" stroke="#3498db" stroke-width="1" rx="2" ry="2" />
-    <rect x="585" y="255" width="100" height="70" fill="#34495e" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="1,1" />
+    <rect x="580" y="250" width="110" height="80" fill="#ffffff" stroke="#5475e5" stroke-width="1" rx="2" ry="2" />
+    <rect x="585" y="255" width="100" height="70" fill="#f5f7fa" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="1,1" />
   </g>
   
   <!-- 左侧垂直装饰元素 -->
   <g>
-    <rect x="240" y="120" width="20" height="250" fill="none" stroke="#e74c3c" stroke-width="0.8" />
-    <rect x="250" y="130" width="5" height="230" fill="#e74c3c" fill-opacity="0.3" />
-    <circle cx="250" cy="130" r="3" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="250" cy="245" r="3" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="250" cy="360" r="3" fill="#e74c3c" filter="url(#glow)" />
+    <rect x="240" y="120" width="20" height="250" fill="none" stroke="#3182ce" stroke-width="0.8" />
+    <rect x="250" y="130" width="5" height="230" fill="#3182ce" fill-opacity="0.3" />
+    <circle cx="250" cy="130" r="3" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="250" cy="245" r="3" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="250" cy="360" r="3" fill="#3182ce" filter="url(#glow)" />
   </g>
   
   <!-- 右侧垂直装饰元素 -->
   <g>
-    <rect x="740" y="120" width="20" height="250" fill="none" stroke="#3498db" stroke-width="0.8" />
-    <rect x="745" y="130" width="5" height="230" fill="#3498db" fill-opacity="0.3" />
-    <circle cx="750" cy="130" r="3" fill="#3498db" filter="url(#glow)" />
-    <circle cx="750" cy="245" r="3" fill="#3498db" filter="url(#glow)" />
-    <circle cx="750" cy="360" r="3" fill="#3498db" filter="url(#glow)" />
+    <rect x="740" y="120" width="20" height="250" fill="none" stroke="#5475e5" stroke-width="0.8" />
+    <rect x="745" y="130" width="5" height="230" fill="#5475e5" fill-opacity="0.3" />
+    <circle cx="750" cy="130" r="3" fill="#5475e5" filter="url(#glow)" />
+    <circle cx="750" cy="245" r="3" fill="#5475e5" filter="url(#glow)" />
+    <circle cx="750" cy="360" r="3" fill="#5475e5" filter="url(#glow)" />
   </g>
   
   <!-- 科技装饰元素 -->
   <g opacity="0.8">
     <!-- 连接线 -->
-    <path d="M260,120 L260,100 L200,100" fill="none" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="5,3" />
-    <path d="M740,120 L740,100 L800,100" fill="none" stroke="#3498db" stroke-width="0.5" stroke-dasharray="5,3" />
-    <path d="M260,370 L260,390 L200,390" fill="none" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="5,3" />
-    <path d="M740,370 L740,390 L800,390" fill="none" stroke="#3498db" stroke-width="0.5" stroke-dasharray="5,3" />
+    <path d="M260,120 L260,100 L200,100" fill="none" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="5,3" />
+    <path d="M740,120 L740,100 L800,100" fill="none" stroke="#5475e5" stroke-width="0.5" stroke-dasharray="5,3" />
+    <path d="M260,370 L260,390 L200,390" fill="none" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="5,3" />
+    <path d="M740,370 L740,390 L800,390" fill="none" stroke="#5475e5" stroke-width="0.5" stroke-dasharray="5,3" />
     
     <!-- 节点 -->
-    <circle cx="200" cy="100" r="3" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="800" cy="100" r="3" fill="#3498db" filter="url(#glow)" />
-    <circle cx="200" cy="390" r="3" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="800" cy="390" r="3" fill="#3498db" filter="url(#glow)" />
+    <circle cx="200" cy="100" r="3" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="800" cy="100" r="3" fill="#5475e5" filter="url(#glow)" />
+    <circle cx="200" cy="390" r="3" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="800" cy="390" r="3" fill="#5475e5" filter="url(#glow)" />
   </g>
   
   <!-- 悬浮艺术装饰框 - 左上 -->
   <g transform="translate(160, 190) rotate(-8)">
-    <rect x="-40" y="-30" width="80" height="60" fill="none" stroke="#e74c3c" stroke-width="1" rx="2" ry="2" />
-    <rect x="-35" y="-25" width="70" height="50" fill="none" stroke="#3498db" stroke-width="0.5" stroke-dasharray="2,1" />
-    <line x1="-40" y1="-15" x2="40" y2="-15" stroke="#e74c3c" stroke-width="0.3" />
-    <circle cx="0" cy="5" r="10" fill="none" stroke="#ecf0f1" stroke-width="0.5" />
+    <rect x="-40" y="-30" width="80" height="60" fill="none" stroke="#3182ce" stroke-width="1" rx="2" ry="2" />
+    <rect x="-35" y="-25" width="70" height="50" fill="none" stroke="#5475e5" stroke-width="0.5" stroke-dasharray="2,1" />
+    <line x1="-40" y1="-15" x2="40" y2="-15" stroke="#3182ce" stroke-width="0.3" />
+    <circle cx="0" cy="5" r="10" fill="none" stroke="#2d3748" stroke-width="0.5" />
   </g>
 
   <!-- 悬浮艺术装饰框 - 右上 (续) -->
   <g transform="translate(840, 190) rotate(8)">
-    <rect x="-40" y="-30" width="80" height="60" fill="none" stroke="#3498db" stroke-width="1" rx="2" ry="2" />
-    <rect x="-35" y="-25" width="70" height="50" fill="none" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="2,1" />
-    <line x1="-40" y1="-15" x2="40" y2="-15" stroke="#3498db" stroke-width="0.3" />
-    <circle cx="0" cy="5" r="10" fill="none" stroke="#ecf0f1" stroke-width="0.5" />
+    <rect x="-40" y="-30" width="80" height="60" fill="none" stroke="#5475e5" stroke-width="1" rx="2" ry="2" />
+    <rect x="-35" y="-25" width="70" height="50" fill="none" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="2,1" />
+    <line x1="-40" y1="-15" x2="40" y2="-15" stroke="#5475e5" stroke-width="0.3" />
+    <circle cx="0" cy="5" r="10" fill="none" stroke="#2d3748" stroke-width="0.5" />
   </g>
   
   <!-- 悬浮艺术装饰框 - 左下 -->
   <g transform="translate(160, 300) rotate(-12)">
-    <rect x="-40" y="-30" width="80" height="60" fill="none" stroke="#3498db" stroke-width="1" rx="2" ry="2" />
-    <rect x="-35" y="-25" width="70" height="50" fill="none" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="2,1" />
-    <line x1="-40" y1="-15" x2="40" y2="-15" stroke="#3498db" stroke-width="0.3" />
-    <circle cx="0" cy="5" r="10" fill="none" stroke="#ecf0f1" stroke-width="0.5" />
+    <rect x="-40" y="-30" width="80" height="60" fill="none" stroke="#5475e5" stroke-width="1" rx="2" ry="2" />
+    <rect x="-35" y="-25" width="70" height="50" fill="none" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="2,1" />
+    <line x1="-40" y1="-15" x2="40" y2="-15" stroke="#5475e5" stroke-width="0.3" />
+    <circle cx="0" cy="5" r="10" fill="none" stroke="#2d3748" stroke-width="0.5" />
   </g>
   
   <!-- 悬浮艺术装饰框 - 右下 -->
   <g transform="translate(840, 300) rotate(12)">
-    <rect x="-40" y="-30" width="80" height="60" fill="none" stroke="#e74c3c" stroke-width="1" rx="2" ry="2" />
-    <rect x="-35" y="-25" width="70" height="50" fill="none" stroke="#3498db" stroke-width="0.5" stroke-dasharray="2,1" />
-    <line x1="-40" y1="-15" x2="40" y2="-15" stroke="#e74c3c" stroke-width="0.3" />
-    <circle cx="0" cy="5" r="10" fill="none" stroke="#ecf0f1" stroke-width="0.5" />
+    <rect x="-40" y="-30" width="80" height="60" fill="none" stroke="#3182ce" stroke-width="1" rx="2" ry="2" />
+    <rect x="-35" y="-25" width="70" height="50" fill="none" stroke="#5475e5" stroke-width="0.5" stroke-dasharray="2,1" />
+    <line x1="-40" y1="-15" x2="40" y2="-15" stroke="#3182ce" stroke-width="0.3" />
+    <circle cx="0" cy="5" r="10" fill="none" stroke="#2d3748" stroke-width="0.5" />
   </g>
   
   <!-- 装饰粒子 -->
   <g opacity="0.7">
-    <circle cx="220" cy="150" r="1.5" fill="#3498db" filter="url(#glow)" />
-    <circle cx="280" cy="120" r="1.5" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="240" cy="280" r="1.5" fill="#3498db" filter="url(#glow)" />
-    <circle cx="300" cy="250" r="1.5" fill="#e74c3c" filter="url(#glow)" />
+    <circle cx="220" cy="150" r="1.5" fill="#5475e5" filter="url(#glow)" />
+    <circle cx="280" cy="120" r="1.5" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="240" cy="280" r="1.5" fill="#5475e5" filter="url(#glow)" />
+    <circle cx="300" cy="250" r="1.5" fill="#3182ce" filter="url(#glow)" />
     
-    <circle cx="780" cy="150" r="1.5" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="720" cy="120" r="1.5" fill="#3498db" filter="url(#glow)" />
-    <circle cx="760" cy="280" r="1.5" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="700" cy="250" r="1.5" fill="#3498db" filter="url(#glow)" />
+    <circle cx="780" cy="150" r="1.5" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="720" cy="120" r="1.5" fill="#5475e5" filter="url(#glow)" />
+    <circle cx="760" cy="280" r="1.5" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="700" cy="250" r="1.5" fill="#5475e5" filter="url(#glow)" />
     
     <!-- 散布式粒子 -->
-    <circle cx="100" cy="100" r="1" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="150" cy="330" r="1" fill="#3498db" filter="url(#glow)" />
-    <circle cx="180" cy="180" r="1" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="900" cy="100" r="1" fill="#3498db" filter="url(#glow)" />
-    <circle cx="850" cy="330" r="1" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="820" cy="180" r="1" fill="#3498db" filter="url(#glow)" />
+    <circle cx="100" cy="100" r="1" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="150" cy="330" r="1" fill="#5475e5" filter="url(#glow)" />
+    <circle cx="180" cy="180" r="1" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="900" cy="100" r="1" fill="#5475e5" filter="url(#glow)" />
+    <circle cx="850" cy="330" r="1" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="820" cy="180" r="1" fill="#5475e5" filter="url(#glow)" />
     
     <!-- 中央区域点缀粒子 -->
-    <circle cx="370" cy="140" r="1" fill="#e74c3c" filter="url(#glow)" />
-    <circle cx="630" cy="140" r="1" fill="#3498db" filter="url(#glow)" />
-    <circle cx="370" cy="350" r="1" fill="#3498db" filter="url(#glow)" />
-    <circle cx="630" cy="350" r="1" fill="#e74c3c" filter="url(#glow)" />
+    <circle cx="370" cy="140" r="1" fill="#3182ce" filter="url(#glow)" />
+    <circle cx="630" cy="140" r="1" fill="#5475e5" filter="url(#glow)" />
+    <circle cx="370" cy="350" r="1" fill="#5475e5" filter="url(#glow)" />
+    <circle cx="630" cy="350" r="1" fill="#3182ce" filter="url(#glow)" />
   </g>
   
   <!-- 科技感装饰线框 -->
   <g opacity="0.3">
     <!-- 顶部装饰线 -->
-    <path d="M350,60 L650,60" stroke="#3498db" stroke-width="1" fill="none" />
-    <rect x="350" y="55" width="300" height="10" fill="none" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="10,5" />
-    <circle cx="350" cy="60" r="3" fill="#3498db" />
-    <circle cx="500" cy="60" r="3" fill="#3498db" />
-    <circle cx="650" cy="60" r="3" fill="#3498db" />
+    <path d="M350,60 L650,60" stroke="#5475e5" stroke-width="1" fill="none" />
+    <rect x="350" y="55" width="300" height="10" fill="none" stroke="#3182ce" stroke-width="0.5" stroke-dasharray="10,5" />
+    <circle cx="350" cy="60" r="3" fill="#5475e5" />
+    <circle cx="500" cy="60" r="3" fill="#5475e5" />
+    <circle cx="650" cy="60" r="3" fill="#5475e5" />
     
     <!-- 底部装饰线 -->
-    <path d="M350,400 L650,400" stroke="#e74c3c" stroke-width="1" fill="none" />
-    <rect x="350" y="395" width="300" height="10" fill="none" stroke="#3498db" stroke-width="0.5" stroke-dasharray="10,5" />
-    <circle cx="350" cy="400" r="3" fill="#e74c3c" />
-    <circle cx="500" cy="400" r="3" fill="#e74c3c" />
-    <circle cx="650" cy="400" r="3" fill="#e74c3c" />
+    <path d="M350,400 L650,400" stroke="#3182ce" stroke-width="1" fill="none" />
+    <rect x="350" y="395" width="300" height="10" fill="none" stroke="#5475e5" stroke-width="0.5" stroke-dasharray="10,5" />
+    <circle cx="350" cy="400" r="3" fill="#3182ce" />
+    <circle cx="500" cy="400" r="3" fill="#3182ce" />
+    <circle cx="650" cy="400" r="3" fill="#3182ce" />
   </g>
   
   <!-- 标题 -->
   <g>
     <!-- 标题背景装饰 -->
-    <rect x="360" y="70" width="280" height="30" fill="none" stroke="#3498db" stroke-width="0.5" stroke-dasharray="5,3" rx="15" ry="15" />
-    <line x1="370" y1="85" x2="630" y2="85" stroke="#e74c3c" stroke-width="0.3" stroke-dasharray="3,3" />
+    <rect x="360" y="70" width="280" height="30" fill="none" stroke="#5475e5" stroke-width="0.5" stroke-dasharray="5,3" rx="15" ry="15" />
+    <line x1="370" y1="85" x2="630" y2="85" stroke="#3182ce" stroke-width="0.3" stroke-dasharray="3,3" />
     
     <!-- 标题文字 -->
-    <text x="500" y="90" text-anchor="middle" font-family="Arial" font-size="20" fill="#ecf0f1" font-weight="bold" filter="url(#glow)">
+    <text x="500" y="90" text-anchor="middle" font-family="Arial" font-size="20" fill="#2d3748" font-weight="bold" filter="url(#glow)">
       艺术与科技的邂逅
     </text>
   </g>
   
   <!-- 副标题 -->
-  <text x="500" y="115" text-anchor="middle" font-family="Arial" font-size="14" fill="#ecf0f1" font-style="italic" opacity="0.8">
+  <text x="500" y="115" text-anchor="middle" font-family="Arial" font-size="14" fill="#5475e5" font-style="italic" opacity="0.8">
     Photography Memories
   </text>
   
   <!-- 底部署名信息 -->
   <g>
     <!-- 署名装饰线 -->
-    <line x1="400" y1="425" x2="600" y2="425" stroke="#3498db" stroke-width="0.5" stroke-opacity="0.6" stroke-dasharray="2,2" />
+    <line x1="400" y1="425" x2="600" y2="425" stroke="#5475e5" stroke-width="0.5" stroke-opacity="0.6" stroke-dasharray="2,2" />
     
     <!-- 署名文字 -->
-    <text x="500" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#ecf0f1" opacity="0.6">
+    <text x="500" y="425" text-anchor="middle" font-family="Arial" font-size="12" fill="#2d3748" opacity="0.6">
       记忆影像 | Digital Gallery | 2025
     </text>
   </g>
